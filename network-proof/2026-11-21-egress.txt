@@ -1,0 +1,5 @@
+Flux post-repair public Git egress test 2026-11-21
+Source: MulticaAgentFactory/openchoreo-gitops-smoke main
+Change is only under network-proof, outside the active Kustomization ./cluster and Helm chart.
+Goal: prove Flux Source Controller fetches a new remote revision via Tailscale exit host Mihomo -> Windows Goji.
+Expected: no chart/cluster manifest change, Helm smoke release remains revision 3 and message v1, all four original OC Plane HelmReleases remain suspended.
